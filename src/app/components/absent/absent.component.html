@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let employee of employees">
+    <span (click)="loadEmployee(employee.id)"> {{ employee.name }}</span>
+  </li>
+</ul>

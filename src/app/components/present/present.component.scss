@@ -1,0 +1,12 @@
+li {
+  list-style: none;
+  font-style: italic;
+  cursor: pointer;
+
+  &:hover {
+    font-weight: 600;
+  }
+}
+ul {
+  text-align: center;
+}

@@ -1,0 +1,14 @@
+<div class="filters">
+  <div class="filter" (click)="navigate('all')">all</div>
+  <div class="filter" (click)="navigate('vegetables')">vegetables</div>
+  <div class="filter" (click)="navigate('spices')">spices</div>
+  <div class="filter" (click)="navigate('water')">water</div>
+</div>
+
+<div class="list">
+  <ul>
+    <li *ngFor="let vendor of vendors">
+      {{ vendor.name }}
+    </li>
+  </ul>
+</div>

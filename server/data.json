@@ -1,0 +1,153 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Arjun",
+      "age": "26",
+      "mobile": "7364746575",
+      "address": "flat-1, street-2, OMR, Chennai-601010",
+      "salary": "20000",
+      "department": "cooking",
+      "experience": "3",
+      "status": "present"
+    },
+    {
+      "id": 2,
+      "name": "Ryan",
+      "age": "24",
+      "mobile": "7364799875",
+      "address": "flat-1, street-22, OMR, Chennai-601010",
+      "salary": "8000",
+      "department": "cleaning",
+      "experience": "2",
+      "status": "present"
+    },
+    {
+      "id": 3,
+      "name": "Vihan",
+      "age": "22",
+      "mobile": "7398746575",
+      "address": "flat-4, street-5, OMR, Chennai-601010",
+      "salary": "20000",
+      "department": "cooking",
+      "experience": "3",
+      "status": "present"
+    },
+    {
+      "id": 4,
+      "name": "Firoj",
+      "age": "29",
+      "mobile": "7378946575",
+      "address": "flat-10, street-28, OMR, Chennai-601010",
+      "salary": "10000",
+      "department": "desk",
+      "experience": "3",
+      "status": "present"
+    },
+    {
+      "id": 5,
+      "name": "Gaurav",
+      "age": "26",
+      "mobile": "7364746575",
+      "address": "flat-1, street-2, OMR, Chennai-601010",
+      "salary": "20000",
+      "department": "cooking",
+      "experience": "3",
+      "status": "absent"
+    },
+    {
+      "id": 6,
+      "name": "Harish",
+      "age": "26",
+      "mobile": "7364746575",
+      "address": "flat-1, street-2, OMR, Chennai-601010",
+      "salary": "20000",
+      "department": "waiter",
+      "experience": "3",
+      "status": "present"
+    },
+    {
+      "id": 7,
+      "name": "Jatin",
+      "age": "26",
+      "mobile": "7364746575",
+      "address": "flat-1, street-2, OMR, Chennai-601010",
+      "salary": "20000",
+      "department": "finance",
+      "experience": "3",
+      "status": "present"
+    },
+    {
+      "id": 8,
+      "name": "Karan",
+      "age": "26",
+      "mobile": "7364746575",
+      "address": "flat-1, street-2, OMR, Chennai-601010",
+      "salary": "20000",
+      "department": "cleaning",
+      "experience": "3",
+      "status": "absent"
+    },
+    {
+      "id": 9,
+      "name": "Qasim",
+      "age": "26",
+      "mobile": "7364746575",
+      "address": "flat-1, street-2, OMR, Chennai-601010",
+      "salary": "20000",
+      "department": "waiter",
+      "experience": "3",
+      "status": "present"
+    },
+    {
+      "id": 10,
+      "name": "Rohan",
+      "age": "26",
+      "mobile": "7364746575",
+      "address": "flat-1, street-2, OMR, Chennai-601010",
+      "salary": "20000",
+      "department": "cleaning",
+      "experience": "3",
+      "status": "present"
+    }
+  ],
+  "vendors": [
+    {
+      "id": 1,
+      "name": "Dhuram Supplies",
+      "supplies": "vegetables",
+      "contact": "8383847485"
+    },
+    {
+      "id": 1,
+      "name": "Lilha Shop",
+      "supplies": "furniture",
+      "contact": "8383864585"
+    },
+    {
+      "id": 1,
+      "name": "Atlas Shop",
+      "supplies": "water",
+      "contact": "8383747485"
+    },
+    {
+      "id": 1,
+      "name": "AR Supplies",
+      "supplies": "vegetables",
+      "contact": "9883847485"
+    },
+    {
+      "id": 1,
+      "name": "Pres Theodore Shop",
+      "supplies": "spices",
+      "contact": "6733847485"
+    }
+  ],
+  "user": [
+    {
+      "id": "1",
+      "name": "admin",
+      "password": "password123"
+    }
+  ]
+}

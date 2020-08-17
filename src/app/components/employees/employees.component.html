@@ -1,0 +1,43 @@
+<!-- 
+  Here you will see multiple router-outlets defiend in same template
+  One will be primary outlet, others need to be named. 
+
+  Steps
+  1. name router-outlet in the template
+  2. add outlet in routing definitions (app.routing.module)
+  3. define outlets with name in routerLink/router.navigate
+ -->
+
+<div class="emp-page">
+  <div class="emp top-margin">
+    <ul>
+      <span *ngFor="let employee of employees">
+        <li [routerLink]="employee.id" routerLinkActive="active">
+          <span>{{ employee.name }}</span>
+        </li>
+      </span>
+    </ul>
+  </div>
+
+  <!-- This is router 1 -->
+  <div class="details top-margin">
+    <router-outlet></router-outlet>
+  </div>
+
+  <div class="attendance">
+    <div class="atendance-menu">
+      <div class="menu" (click)="loadPresent()">
+        Present
+      </div>
+      <div class="menu" (click)="loadAbsent()">
+        Absent
+      </div>
+    </div>
+    <!-- This is another router in same template -->
+    <router-outlet name="attendance"></router-outlet>
+    <!-- Also these two are nested inside parent router-outlet 
+         defined in AppComponent. 
+         So all these will be children routes of /employee
+    -->
+  </div>
+</div>
