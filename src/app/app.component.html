@@ -6,7 +6,10 @@
       <div class="menu-item" routerLink="vendors">Vendor</div>
     </div>
     <div class="menu">
-      <div class="menu-item">Hi User</div>
+      <div class="menu-item">
+        <span *ngIf="isLoggedIn" (click)="logout()">Logout</span>
+        <span *ngIf="!isLoggedIn" (click)="login()">Login</span>
+      </div>
     </div>
   </div>
 </header>

@@ -5,13 +5,18 @@ import { EmployeeDetailsComponent } from './components/employee-details/employee
 import { AbsentComponent } from './components/absent/absent.component';
 import { PresentComponent } from './components/present/present.component';
 import { EmployeesComponent } from './components/employees/employees.component';
+import { AuthGuard } from 'src/app/auth/auth.guard';
 
 const routes: Routes = [
   {
     path: '',
     component: EmployeesComponent,
     children: [
-      { path: ':empId/update', component: EmployeeFormComponent },
+      {
+        path: ':empId/update',
+        component: EmployeeFormComponent,
+        canActivate: [AuthGuard],
+      },
       { path: ':empId', component: EmployeeDetailsComponent },
       // https://github.com/angular/angular/issues/12842
       // issue with lazy loading named routers

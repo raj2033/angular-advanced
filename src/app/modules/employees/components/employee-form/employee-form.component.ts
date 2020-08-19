@@ -38,9 +38,7 @@ export class EmployeeFormComponent implements OnInit {
         });
     });
 
-    this.department.valueChanges.subscribe((data) => {
-      console.log(data);
-    });
+    this.department.valueChanges.subscribe((data) => {});
   }
 
   onSubmit(): void {
