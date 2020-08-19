@@ -1,25 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { EmployeesComponent } from './components/employees/employees.component';
 import { VendorsComponent } from './components/vendors/vendors.component';
-import { EmployeeDetailsComponent } from './components/employee-details/employee-details.component';
 import { HomeComponent } from './components/home/home.component';
-import { AbsentComponent } from './components/absent/absent.component';
-import { PresentComponent } from './components/present/present.component';
-import { EmployeeFormComponent } from 'src/app/components/employee-form/employee-form.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   {
     path: 'employees',
-    component: EmployeesComponent,
-    children: [
-      { path: ':empId/update', component: EmployeeFormComponent },
-      { path: ':empId', component: EmployeeDetailsComponent },
-      { path: 'absent', component: AbsentComponent, outlet: 'attendance' }, // named router shold have outlet keyword
-      { path: 'present', component: PresentComponent, outlet: 'attendance' },
-    ],
+    loadChildren: () =>
+      // notice the change in route definition here
+      import('./modules/employees/employees.module').then(
+        (m) => m.EmployeesModule
+      ),
   },
   { path: 'vendors', component: VendorsComponent },
 ];

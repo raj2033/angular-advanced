@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
-import { IEmployee } from '../models/employees';
+import { IEmployee } from 'src/app/models/employees';
+import { EmployeesModule } from 'src/app/modules/employees/employees.module';
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root', // notice the change in value here
 })
 export class EmployeesService {
   constructor(private http: HttpClient) {}

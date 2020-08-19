@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators, AbstractControl } from '@angular/forms';
-import { EmployeesService } from 'src/app/services/employees.service';
+import { EmployeesService } from 'src/app/modules/employees/services/employees.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({

@@ -25,7 +25,11 @@
   </div>
 
   <div class="attendance">
-    <div class="atendance-menu">
+    <!-- 
+      https://github.com/angular/angular/issues/12842
+      issue with lazy loading named routers
+     -->
+    <!-- <div class="atendance-menu">
       <div class="menu" (click)="loadPresent()">
         Present
       </div>
@@ -33,8 +37,8 @@
         Absent
       </div>
     </div>
+    <router-outlet name="attendance"></router-outlet> -->
     <!-- This is another router in same template -->
-    <router-outlet name="attendance"></router-outlet>
     <!-- Also these two are nested inside parent router-outlet 
          defined in AppComponent. 
          So all these will be children routes of /employee
