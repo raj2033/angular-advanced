@@ -1,0 +1,74 @@
+<form [formGroup]="empForm">
+  <div class="field">
+    <div class="field-input">
+      <label> First Name:</label>
+      <input type="text" formControlName="name" class="enter" />
+    </div>
+    <span *ngIf="name.hasError('required')" class="err">
+      Name is required
+    </span>
+    <span *ngIf="name.hasError('minlength')" class="err">
+      Name should have min 3 char
+    </span>
+  </div>
+  <div class="field">
+    <div class="field-input">
+      <label> Age:</label>
+      <input type="text" formControlName="age" class="enter" />
+    </div>
+    <span *ngIf="age.hasError('required')" class="err">
+      Age is required
+    </span>
+    <span *ngIf="age.hasError('pattern')" class="err">
+      Age should be in range 20-59
+    </span>
+  </div>
+  <div class="field">
+    <div class="field-input">
+      <label> Department:</label>
+      <select class="enter" formControlName="department">
+        <option *ngFor="let department of departments" [value]="department">
+          {{ department | titlecase }}
+        </option>
+      </select>
+      <span *ngIf="department.hasError('required')" class="err">
+        Department is required
+      </span>
+    </div>
+  </div>
+  <div class="field">
+    <div class="field-input">
+      <label> Experience:</label>
+      <input type="text" formControlName="experience" class="enter" />
+    </div>
+  </div>
+  <div class="field">
+    <div class="field-input">
+      <label> Mobile:</label>
+      <input type="text" formControlName="mobile" class="enter" />
+    </div>
+    <span *ngIf="mobile.hasError('required')" class="err">
+      Mobile is required
+    </span>
+  </div>
+  <div class="field">
+    <div class="field-input">
+      <label> Salary:</label>
+      <input type="text" formControlName="salary" class="enter" />
+    </div>
+    <span *ngIf="salary.hasError('required')" class="err">
+      Salary is required
+    </span>
+  </div>
+  <div class="field">
+    <div class="field-input">
+      <label> Address(Opt):</label>
+      <input type="text" formControlName="address" class="enter" />
+    </div>
+  </div>
+
+  <div class="action">
+    <div class="btn" (click)="onSubmit()">Update</div>
+    <div class="btn" [routerLink]="['../']">Cancel</div>
+  </div>
+</form>

@@ -10,6 +10,8 @@ import { EmployeeDetailsComponent } from './components/employee-details/employee
 import { HomeComponent } from './components/home/home.component';
 import { PresentComponent } from './components/present/present.component';
 import { AbsentComponent } from './components/absent/absent.component';
+import { EmployeeFormComponent } from './components/employee-form/employee-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,8 +22,14 @@ import { AbsentComponent } from './components/absent/absent.component';
     HomeComponent,
     PresentComponent,
     AbsentComponent,
+    EmployeeFormComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

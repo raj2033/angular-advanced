@@ -2,7 +2,7 @@
   "employees": [
     {
       "id": 1,
-      "name": "Arjun",
+      "name": "Arjunzz",
       "age": "26",
       "mobile": "7364746575",
       "address": "flat-1, street-2, OMR, Chennai-601010",
@@ -24,7 +24,7 @@
     },
     {
       "id": 3,
-      "name": "Vihan",
+      "name": "Vihanz",
       "age": "22",
       "mobile": "7398746575",
       "address": "flat-4, street-5, OMR, Chennai-601010",
@@ -40,7 +40,7 @@
       "mobile": "7378946575",
       "address": "flat-10, street-28, OMR, Chennai-601010",
       "salary": "10000",
-      "department": "desk",
+      "department": "waiter",
       "experience": "3",
       "status": "present"
     },

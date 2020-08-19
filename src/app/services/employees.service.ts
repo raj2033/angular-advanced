@@ -20,4 +20,7 @@ export class EmployeesService {
       `http://localhost:3000/employees?status=${status}`
     );
   }
+  updateEmployee(form, id: number): Observable<any> {
+    return this.http.patch(`http://localhost:3000/employees/${id}`, form);
+  }
 }

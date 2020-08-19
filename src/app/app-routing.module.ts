@@ -6,6 +6,7 @@ import { EmployeeDetailsComponent } from './components/employee-details/employee
 import { HomeComponent } from './components/home/home.component';
 import { AbsentComponent } from './components/absent/absent.component';
 import { PresentComponent } from './components/present/present.component';
+import { EmployeeFormComponent } from 'src/app/components/employee-form/employee-form.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
     path: 'employees',
     component: EmployeesComponent,
     children: [
+      { path: ':empId/update', component: EmployeeFormComponent },
       { path: ':empId', component: EmployeeDetailsComponent },
       { path: 'absent', component: AbsentComponent, outlet: 'attendance' }, // named router shold have outlet keyword
       { path: 'present', component: PresentComponent, outlet: 'attendance' },
